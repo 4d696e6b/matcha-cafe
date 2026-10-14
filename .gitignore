@@ -1,0 +1,15 @@
+# Finder creates this file; it is not part of the website or submission.
+.DS_Store
+
+# Installed dependencies are recreated with npm ci and stay out of Git.
+node_modules/
+
+# Next.js recreates build output and generated TypeScript metadata locally.
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Editor and temporary files should not be submitted as website source.
+*.log
+.vscode/

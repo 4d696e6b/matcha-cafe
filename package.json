@@ -1,12 +1,13 @@
 {
-  "name": "our_cv",
-  "version": "0.1.0",
+  "name": "matcha-cafe",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "serve out --listen tcp://127.0.0.1:3000 --no-clipboard",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.3",
@@ -22,6 +23,12 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "serve": "14.2.6",
     "typescript": "^5"
+  },
+  "type": "module",
+  "description": "V MATCHA café built with Next.js, TypeScript, and Tailwind CSS.",
+  "engines": {
+    "node": ">=20.9.0"
   }
 }

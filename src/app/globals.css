@@ -1,0 +1,49 @@
+/* Tailwind provides resets, layout utilities, responsive variants, and hidden-attribute behavior. */
+@import "tailwindcss";
+
+/* Shared colours and local fonts generate utilities such as bg-paper and font-serif. */
+@theme inline {
+  --color-paper: #fafcf7;
+  --color-ink: #244c38;
+  --color-muted: #566b5b;
+  --color-matcha: #375f3c;
+  --color-pale: #edf3e6;
+  --color-line: #d5dfcf;
+  /* Named colours avoid hex values inside component classes. */
+  --color-matcha-deep: #173a28;
+  --color-footer-copy: #d7e5d5;
+  --color-footer-accent: #e1efcc;
+  --color-footer-line: #4d6b55;
+
+  /* Page widths retain the original responsive gutters. */
+  --spacing-page: calc(100% - 2.25rem);
+  --spacing-page-md: calc(100% - 4rem);
+  --spacing-page-xl: calc(100% - 6rem);
+
+  /* Fluid typography has no numeric Tailwind equivalent, so it gets readable names. */
+  --text-display: clamp(3.6rem, 6.5vw, 5.8rem);
+  --text-heading: clamp(2.7rem, 4.6vw, 3.9rem);
+  --text-menu-title: clamp(3.3rem, 6vw, 5rem);
+  --text-label: 0.6875rem;
+  --text-body: 0.9375rem;
+  --text-caption: 0.625rem;
+  --text-tagline: 0.65rem;
+  --leading-display: 0.97;
+  --leading-heading: 1.05;
+  --leading-body: 1.65;
+  --tracking-label: 0.17em;
+  --tracking-caption: 0.15em;
+  --tracking-logo: 0.2em;
+  --tracking-tagline: 0.16em;
+  --tracking-display: -0.045em;
+  --tracking-heading: -0.04em;
+
+  /* Photo positioning and the precise hover scale keep their original appearance. */
+  --radius-arch: 15rem;
+  --object-position-matcha: 56% center;
+  --scale-photo: 1.035;
+  --ease-natural: ease;
+
+  --font-sans: var(--font-dm-sans), Arial, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+}
